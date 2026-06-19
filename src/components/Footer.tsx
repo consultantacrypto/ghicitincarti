@@ -26,7 +26,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-500 transition-colors duration-300 hover:text-apple-text"
+                    className="inline-flex items-center py-3 text-sm text-gray-500 transition-colors duration-300 hover:text-apple-text"
                   >
                     {link.label}
                   </Link>
@@ -43,7 +43,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:programari@ghicitincarti.ro"
-                  className="transition-colors duration-300 hover:text-apple-text"
+                  className="inline-flex items-center py-3 transition-colors duration-300 hover:text-apple-text"
                 >
                   programari@ghicitincarti.ro
                 </a>

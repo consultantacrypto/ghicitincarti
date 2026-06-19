@@ -1,8 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function CafeaPage() {
   return (
-    <div className="min-h-screen bg-[#fbfbfd] px-4 pt-32 pb-24 sm:px-6">
+    <div className="min-h-screen overflow-x-hidden bg-[#fbfbfd] px-4 pt-32 pb-24 sm:px-6">
       <article className="mx-auto max-w-4xl">
         <header className="mb-20 text-center">
           <h1 className="mb-6 text-5xl font-bold tracking-tight text-[#1d1d1f] md:text-7xl">
@@ -15,10 +16,13 @@ export default function CafeaPage() {
         </header>
 
         <div className="relative mb-20 h-[400px] w-full overflow-hidden rounded-[2.5rem] border border-gray-100 shadow-xl md:h-[500px]">
-          <img
+          <Image
             src="/Ghicit in cafea_2.jpg"
-            alt="Ghicit în Cafea"
-            className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-1000 hover:scale-105"
+            alt="Ceașcă de cafea pentru o sesiune de ghicit în cafea"
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 896px"
+            className="object-cover object-center transition-transform duration-1000 hover:scale-105"
           />
         </div>
 

@@ -1,6 +1,6 @@
 export default function PachetePage() {
   return (
-    <div className="min-h-screen bg-[#fbfbfd] px-4 pt-32 pb-24 sm:px-6">
+    <div className="min-h-screen overflow-x-hidden bg-[#fbfbfd] px-4 pt-32 pb-24 sm:px-6">
       <div className="mx-auto max-w-7xl">
         <header className="mb-16 text-center">
           <h1
@@ -88,7 +88,7 @@ export default function PachetePage() {
               </div>
               <button
                 type="button"
-                className="w-full rounded-full bg-[#0071e3] py-3 font-medium text-white transition-colors hover:bg-[#0077ed]"
+                className="w-full rounded-full bg-[#0071e3] py-4 font-medium text-white transition-colors hover:bg-[#0077ed]"
               >
                 Rezervă sesiunea
               </button>
@@ -119,7 +119,7 @@ export default function PachetePage() {
               </div>
               <button
                 type="button"
-                className="w-full rounded-full bg-[#0071e3] py-3 font-medium text-white transition-colors hover:bg-[#0077ed]"
+                className="w-full rounded-full bg-[#0071e3] py-4 font-medium text-white transition-colors hover:bg-[#0077ed]"
               >
                 Rezervă sesiunea
               </button>
@@ -151,7 +151,7 @@ export default function PachetePage() {
               </div>
               <button
                 type="button"
-                className="w-full rounded-full bg-[#0071e3] py-3 font-medium text-white transition-colors hover:bg-[#0077ed]"
+                className="w-full rounded-full bg-[#0071e3] py-4 font-medium text-white transition-colors hover:bg-[#0077ed]"
               >
                 Rezervă sesiunea
               </button>

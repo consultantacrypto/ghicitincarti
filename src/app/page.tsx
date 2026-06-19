@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const testimonials = [
@@ -20,8 +21,11 @@ const testimonials = [
 
 export default function Home() {
   return (
-    <main className="flex flex-1 flex-col bg-white">
-      <section className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden bg-[#fbfbfd] px-4">
+    <main className="flex flex-1 flex-col overflow-x-hidden bg-white">
+      <section
+        aria-label="Introducere — claritate spirituală"
+        className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden bg-[#fbfbfd] px-4"
+      >
         <div className="relative z-10 flex w-full flex-col items-center">
           <h1
             className="w-full bg-gradient-to-r from-[#FF007F] via-[#7B2CBF] to-[#FF007F] bg-clip-text text-center text-[15vw] leading-[0.85] font-bold tracking-tighter text-transparent md:text-[12vw]"
@@ -48,10 +52,23 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="servicii" className="py-32">
-        <div className="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-6 px-4 md:grid-cols-2">
+      <section
+        id="servicii"
+        aria-labelledby="servicii-heading"
+        className="py-32"
+      >
+        <h2 id="servicii-heading" className="sr-only">
+          Servicii de Tarot, Cartomanție și Ghicit în Cafea
+        </h2>
+        <div
+          className="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-6 px-4 md:grid-cols-2"
+          role="list"
+          aria-label="Lista serviciilor spirituale"
+        >
           <Link
             href="/cartomantie"
+            role="listitem"
+            aria-label="Cartomanție — previziuni precise prin cărțile tradiționale"
             className="group relative flex h-[450px] min-h-0 flex-col overflow-hidden rounded-[2.5rem] border border-gray-100 bg-[#fbfbfd]"
           >
             <div className="relative z-10 p-10 pb-0">
@@ -67,16 +84,20 @@ export default function Home() {
               </div>
             </div>
             <div className="relative mt-8 min-h-0 flex-1">
-              <img
+              <Image
                 src="/cartomantie.jpg"
-                alt="Cartomanție"
-                className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                alt="Cartomanție — cărți tradiționale pentru previziuni precise"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
               />
             </div>
           </Link>
 
           <Link
             href="/tarot"
+            role="listitem"
+            aria-label="Tarotologie — citiri intuitive și analiză simbolică"
             className="group relative flex h-[450px] min-h-0 flex-col overflow-hidden rounded-[2.5rem] border border-gray-100 bg-[#fbfbfd]"
           >
             <div className="relative z-10 p-10 pb-0">
@@ -92,16 +113,20 @@ export default function Home() {
               </div>
             </div>
             <div className="relative mt-8 min-h-0 flex-1">
-              <img
+              <Image
                 src="/tarot.jpg"
-                alt="Tarot"
-                className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                alt="Tarotologie — cărți de tarot pentru citiri intuitive"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
               />
             </div>
           </Link>
 
           <Link
             href="/cafea"
+            role="listitem"
+            aria-label="Ghicit în cafea — tradiție și intuiție"
             className="group relative flex h-[500px] min-h-0 flex-col overflow-hidden rounded-[2.5rem] border border-gray-100 bg-[#fbfbfd] md:col-span-2"
           >
             <div className="relative z-10 p-10 pb-0 text-center md:text-left">
@@ -114,10 +139,12 @@ export default function Home() {
               </div>
             </div>
             <div className="relative mt-8 min-h-0 flex-1">
-              <img
+              <Image
                 src="/Ghicit in cafea_2.jpg"
-                alt="Ghicit în cafea"
-                className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                alt="Ghicit în cafea — ceașcă de cafea pentru citire tasseografică"
+                fill
+                sizes="100vw"
+                className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
               />
             </div>
           </Link>
@@ -126,22 +153,28 @@ export default function Home() {
 
       <section
         id="despre"
+        aria-labelledby="despre-heading"
         className="relative overflow-hidden border-t border-gray-100 bg-[#fbfbfd] py-24"
       >
-        <div className="mx-auto flex max-w-7xl flex-col items-center gap-16 px-6 md:flex-row">
+        <article className="mx-auto flex max-w-7xl flex-col items-center gap-16 px-6 md:flex-row">
           <div className="relative w-full md:w-1/2">
             <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2.5rem] shadow-2xl">
-              <img
+              <Image
                 src="/catalina.jpg"
-                alt="Cătălina - Consilier Spiritual"
-                className="h-full w-full object-cover object-center grayscale transition-all duration-700 hover:scale-105 hover:grayscale-0"
+                alt="Cătălina Verinceanu — consilier spiritual"
+                fill
+                sizes="(max-width: 768px) 100vw, 384px"
+                className="object-cover object-center grayscale transition-all duration-700 hover:scale-105 hover:grayscale-0"
               />
             </div>
             <div className="absolute -right-10 -bottom-10 -z-10 h-64 w-64 rounded-full bg-[#7B2CBF]/10 mix-blend-multiply blur-3xl filter" />
           </div>
 
           <div className="w-full md:w-1/2">
-            <h2 className="mb-6 text-4xl font-bold tracking-tight text-[#1d1d1f] md:text-5xl">
+            <h2
+              id="despre-heading"
+              className="mb-6 text-4xl font-bold tracking-tight text-[#1d1d1f] md:text-5xl"
+            >
               Intuiție dublată de experiență.
             </h2>
             <div className="space-y-6 text-lg leading-relaxed font-light text-[#86868b]">
@@ -166,27 +199,41 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </div>
+        </article>
       </section>
 
-      <section id="testimoniale" className="bg-white px-6 py-32">
+      <section
+        id="testimoniale"
+        aria-labelledby="testimoniale-heading"
+        className="bg-white px-6 py-32"
+      >
         <div className="mx-auto max-w-6xl">
-          <h2 className="mb-16 text-center text-3xl font-semibold text-apple-text">
+          <h2
+            id="testimoniale-heading"
+            className="mb-16 text-center text-3xl font-semibold text-apple-text"
+          >
             Ce spun clienții
           </h2>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div
+            className="grid grid-cols-1 gap-8 md:grid-cols-3"
+            role="list"
+            aria-label="Testimoniale clienți"
+          >
             {testimonials.map((testimonial) => (
               <article
                 key={testimonial.name}
+                role="listitem"
                 className="rounded-3xl bg-[#fbfbfd] p-8"
               >
-                <p className="mb-6 italic leading-relaxed text-gray-500">
+                <blockquote className="mb-6 italic leading-relaxed text-gray-500">
                   &ldquo;{testimonial.quote}&rdquo;
-                </p>
-                <p className="text-sm font-semibold text-apple-text">
-                  {testimonial.name}
-                </p>
+                </blockquote>
+                <footer>
+                  <cite className="text-sm font-semibold not-italic text-apple-text">
+                    {testimonial.name}
+                  </cite>
+                </footer>
               </article>
             ))}
           </div>
