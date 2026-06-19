@@ -54,7 +54,7 @@ export default function PachetePage() {
                 href="https://buy.stripe.com/cNieV6fBN25Ec732uUgQE03"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full rounded-full bg-[#0071e3] py-4 text-center text-lg font-medium text-white transition-all duration-300 hover:bg-[#0077ed] hover:shadow-[0_0_20px_rgba(0,113,227,0.4)]"
+                className="block text-center w-full py-4 bg-[#0071e3] text-white text-lg font-medium rounded-full hover:bg-[#0077ed] transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,113,227,0.4)]"
               >
                 Rezervă sesiunea
               </a>
@@ -86,19 +86,14 @@ export default function PachetePage() {
                 <span className="h-2 w-2 rounded-full bg-gray-300" />
                 45 minute
               </div>
-              <button
-                type="button"
-                className="w-full rounded-full bg-[#0071e3] py-4 font-medium text-white transition-colors hover:bg-[#0077ed]"
+              <a
+                href="https://buy.stripe.com/aFaaEQexJbGe6MJ7PegQE00"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center w-full py-3 bg-[#0071e3] text-white font-medium rounded-full hover:bg-[#0077ed] transition-colors"
               >
                 Rezervă sesiunea
-              </button>
-            </div>
-          </div>
-
-          <div className="flex flex-col justify-between rounded-[2.5rem] border border-gray-100 bg-white p-8 shadow-sm transition-shadow duration-300 hover:shadow-xl">
-            <div>
-              <h3 className="mb-2 text-2xl font-semibold text-[#1d1d1f]">
-                Sesiune Tarot
+              </a>
               </h3>
               <div className="mb-6 text-3xl font-bold text-[#1d1d1f]">
                 500
@@ -117,16 +112,14 @@ export default function PachetePage() {
                 <span className="h-2 w-2 rounded-full bg-gray-300" />
                 45 minute
               </div>
-              <button
-                type="button"
-                className="w-full rounded-full bg-[#0071e3] py-4 font-medium text-white transition-colors hover:bg-[#0077ed]"
+              <a
+                href="https://buy.stripe.com/8x23codtFfWu2wtfhGgQE01"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center w-full py-3 bg-[#0071e3] text-white font-medium rounded-full hover:bg-[#0077ed] transition-colors"
               >
                 Rezervă sesiunea
-              </button>
-            </div>
-          </div>
-
-          <div className="relative flex flex-col justify-between overflow-hidden rounded-[2.5rem] border border-gray-100 bg-white p-8 shadow-sm transition-shadow duration-300 hover:shadow-xl">
+              </a>
             <div className="absolute top-0 right-0 h-24 w-24 rounded-bl-full bg-[#0071e3]/5" />
             <div className="relative z-10">
               <h3 className="mb-2 text-2xl font-semibold text-[#1d1d1f]">
@@ -149,15 +142,14 @@ export default function PachetePage() {
                 <span className="h-2 w-2 rounded-full bg-[#0071e3]/50" />
                 60 minute
               </div>
-              <button
-                type="button"
-                className="w-full rounded-full bg-[#0071e3] py-4 font-medium text-white transition-colors hover:bg-[#0077ed]"
+              <a
+                href="https://buy.stripe.com/6oUeV6cpB39Ib2Zb1qgQE02"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center w-full py-3 bg-[#0071e3] text-white font-medium rounded-full hover:bg-[#0077ed] transition-colors"
               >
                 Rezervă sesiunea
-              </button>
-            </div>
-          </div>
-        </div>
+              </a>
       </div>
     </div>
   );
