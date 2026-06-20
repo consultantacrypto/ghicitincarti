@@ -20,12 +20,12 @@ export default function Navbar() {
         <Link
           href="/"
           onClick={closeMenu}
-          className="group inline-flex items-baseline py-3"
+          className="group flex items-baseline py-3"
         >
-          <span className="font-serif text-3xl font-bold tracking-tighter text-[#1d1d1f]">
-            Cătălina
+          <span className="text-2xl md:text-3xl font-serif font-bold tracking-tighter text-[#1d1d1f]">
+            Ghicit în Cărți
           </span>
-          <span className="text-4xl text-[#0071e3] transition-colors duration-300 group-hover:text-[#FF007F]">
+          <span className="text-3xl md:text-4xl text-[#0071e3] group-hover:text-[#FF007F] transition-colors duration-300">
             .
           </span>
         </Link>

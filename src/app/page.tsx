@@ -160,11 +160,11 @@ export default function Home() {
           <div className="relative w-full md:w-1/2">
             <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2.5rem] shadow-2xl">
               <Image
-                src="/catalina.jpg"
-                alt="Cătălina Verinceanu — consilier spiritual"
+                src="/arta-divinatiei.jpg"
+                alt="Arta divinației — tarot, cartomanție și ghicit în cafea"
                 fill
                 sizes="(max-width: 768px) 100vw, 384px"
-                className="object-cover object-center grayscale transition-all duration-700 hover:scale-105 hover:grayscale-0"
+                className="object-cover object-center transform hover:scale-105 transition-all duration-700"
               />
             </div>
             <div className="absolute -right-10 -bottom-10 -z-10 h-64 w-64 rounded-full bg-[#7B2CBF]/10 mix-blend-multiply blur-3xl filter" />
@@ -175,7 +175,7 @@ export default function Home() {
               id="despre-heading"
               className="mb-6 text-4xl font-bold tracking-tight text-[#1d1d1f] md:text-5xl"
             >
-              Intuiție dublată de experiență.
+              Arta divinației, decodată.
             </h2>
             <div className="space-y-6 text-lg leading-relaxed font-light text-[#86868b]">
               <p>
@@ -193,10 +193,8 @@ export default function Home() {
               </p>
             </div>
             <div className="mt-10 border-t border-gray-200 pt-8">
-              <p className="text-xl font-semibold text-[#1d1d1f]">Cătălina</p>
-              <p className="mt-1 text-sm font-medium text-[#0071e3]">
-                Fondator & Consilier Spiritual
-              </p>
+              <p className="font-semibold text-[#1d1d1f] text-xl">Experiență completă</p>
+              <p className="text-sm text-[#0071e3] font-medium mt-1">Tarot • Cartomanție • Cafea</p>
             </div>
           </div>
         </article>
